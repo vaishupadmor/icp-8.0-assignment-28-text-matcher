@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <style>
+    
+    .app-container{
+        display: block;
+        border: 2px solid black;
+        border-radius: 25px;
+        margin: 50px;
+        background-color: #B3E5FC;
+        height: 500px;
+        box-shadow: 0px 5px 4px 10px #B3E5FC;
+        
+    }
+    
+
+
+    .app-heading{
+     text-align :center;
+     font-size: 40px;
+    
+    
+    }
+
+    .text-container{
+        display:flex;
+        justify-content: space-around;
+        
+        
+    }
+
+    .input-text{
+        width:300px;
+        height: 150px;
+        border-radius: 40px;
+        border: 2px double black;
+        box-shadow: 3px 1px 1px 5px red;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-left: 15px;
+        
+    }
+
+    .match-result{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+   </style>
+   
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-container">
+    <h1 class="app-heading"> string comparator !!</h1>
+    
+<div class="text-container">
+    <input type="text" class="input-text"  id="input1" onkeyup="comparetext()"/>
+    <input type="text" class="input-text"  id="input2" onkeyup="comparetext()"/>
+
+
+</div>
+<p class="match-result" id="match-result-text">  </p>
+
+</div>
+<script>
+    function comparetext(){
+        const inputaElement = document.getElementById("input1")
+        const inputbElement = document.getElementById("input2")
+        const resultElement = document.getElementById("match-result-text")
+   
+  if(inputaElement.value == inputbElement.value)
+{
+    resultElement.innerText = "result matched !"
+    resultElement.style.color = "green"  
+
+}
+
+  else
+
+{
+    resultElement.innerText ="result not matched !!"
+    resultElement.style.color = "red"
+}
+  }
+</script>
+
+</body>
+</html>

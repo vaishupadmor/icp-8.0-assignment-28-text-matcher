@@ -1,3 +1,5 @@
+# Readme
+
 ## this is string comparator application 
 
 It's an application where we can compare two strings wheather they are same or not.and it's very handful can be used efficiently.
